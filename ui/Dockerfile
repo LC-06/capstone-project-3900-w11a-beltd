@@ -7,5 +7,6 @@ COPY ./package*.json .
 RUN npm ci --production
 
 COPY ./src ./src
+COPY ./public ./public
 
 CMD [ "npm", "start" ]
