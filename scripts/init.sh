@@ -1,13 +1,13 @@
 echo "Installing Identity Service"
 cd ./identity_service && \
-npm ci && \
+pnpm install && \
 
 echo "Installing Collection Service" && \
 cd ../collection_service && \
-npm ci && \
+pnpm install && \
 
 echo "Installing UI" && \
 cd ../ui && \
-npm ci && \
+pnpm install && \
 
 echo "Installation Complete"
